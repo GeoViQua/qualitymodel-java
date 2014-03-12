@@ -16,6 +16,14 @@
 		<name>GeoViQua</name>
 		<url>http://geoviqua.org</url>
 	</organization>
+	
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
@@ -28,11 +36,19 @@
 	
 	<modules>
 		<module>schemas</module>
-		<module>demo</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	<profiles>
+		<profile>
+			<id>demo</id>
+			<modules>
+				<module>demo</module>
+			</modules>
+		</profile>
+	</profiles>
 	
 </project>
